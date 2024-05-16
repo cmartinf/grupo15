@@ -1,0 +1,53 @@
+/* Estilos para el formulario de contacto */
+
+.contact-container {
+    max-width: 800px;
+    margin: 100px auto 50px auto; /* Ajusta el margen superior según sea necesario */
+    padding: 20px;
+    background-color: var(--bg-color); /* Usa el color de fondo definido en :root */
+    border-radius: 10px; /* Agrega bordes redondeados para suavizar la apariencia */
+    box-shadow: var(--box-shadow); /* Agrega sombra para resaltar el formulario */
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--orange-color); /* Usa el color de texto definido en :root */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-weight: bold;
+    color: var(--text-color); /* Usa el color de texto definido en :root */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Cambia el color del borde según sea necesario */
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--green-color); /* Usa el color verde definido en :root */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #2c7a10; /* Cambia el color de fondo al pasar el ratón según sea necesario */
+}
