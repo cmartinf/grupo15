@@ -11,38 +11,50 @@
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/recipes.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/recipes.css">
 </head>
+
 <body>
+    <!---------- HEADER ---------->
     <header class="header">
-        <div class="logo_container">
-            <img src="/img/17_122771.png" alt="Logo" class="img-logo">
-            <a href="/index.html" class="title-logo">Natural Market</a>
-        </div>
-        <!-- NavBar -->
+
+        <a href="/index.html" class="logo">Natural <span>Market</span></a>
+
+
+        <!--NavBar-->
+
         <nav class="navbar">
+
             <a href="/index.html">Home</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#categories">Categorias</a>
             <a href="/pages/products.html">Productos</a>
             <a href="/pages/recipes.html">Recetas</a>
             <a href="/pages/contact.html">Contacto</a>
+
         </nav>
+        <!--Menu-->
         <div class="icons">
             <div id="search-btn"><i class="fas fa-search"></i></div>
             <div id="cart-btn"><i class="fas fa-cart-arrow-down"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
+
         </div>
+        <!--Search-->
         <form class="search-form">
             <input type="search" id="search-box" placeholder="Search here....">
             <label for="search-box" class="fas fa-search"></label>
         </form>
+        <!--Login-->
         <form action="#" class="login-form">
             <h3>Login</h3>
             <input type="email" placeholder="Email registrado" class="box">
             <input type="password" placeholder="Contraseña" class="box">
             <p>¿No estas registrado/a?<a href="/pages/contact.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
+
         </form>
     </header>
 
@@ -94,6 +106,6 @@
         </div>
     </footer>
 </main>
-    <script src="/js/recipes.js"></script>
+    <script src="/assets/js/recipes.js"></script>
 </body>
 </html>
