@@ -1,0 +1,95 @@
+/* recipes.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+  }
+  
+  .recipe-search {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  #query {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    width: 50%;
+    max-width: 400px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-card h3 {
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  /* Estilos para el modal */
+  .recipe-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .recipe-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .recipe-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .recipe-modal-close:hover,
+  .recipe-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

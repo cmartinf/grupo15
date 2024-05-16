@@ -1,0 +1,467 @@
+/*-----------------------------------*\
+  #GOOGLE FONTS
+\*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.btn {
+    border: .2rem solid var(--green-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--green-color);
+
+}
+
+.btn:hover {
+    background-color: var(--green-color);
+    color: var(--bg-color);
+}
+
+/*-----------------------------------*\
+  #VARIABLES
+\*-----------------------------------*/
+
+:root {
+    --green-color: #3cb815;
+    --light-green-color: #c0eb7b;
+    --orange-color: #ff7e00;
+    --light-orange-color: #f3a95f;
+    --light-color: #666;
+    --black: #130f40;
+    --text-color: #1a2428;
+    --bg-color: #ffffff;
+
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: .2rem solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+.header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+
+}
+
+.title-logo {
+    color: var(--orange-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    margin-left: 0.5rem;
+
+}
+
+.title-logo:hover {
+    color: var(--green-color);
+}
+
+
+
+.img-logo {
+    width: 40px;
+}
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 3rem;
+    transition: all .5s ease-in;
+
+}
+
+.header .navbar a:hover {
+    color: var(--green-color);
+    border-top: 0.3rem solid var(--light-green-color);
+    border-bottom: 0.3rem solid var(--light-green-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header .icons {
+    display: flex;
+
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color);
+
+}
+
+.header .icons div:hover {
+    color: var(--green-color);
+    border: 0.1rem solid var(--green-color);
+
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 4rem;
+    background: var(--bg-color);
+    border: 0px solid;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--green-color);
+}
+
+.login-form {
+    border: 0px solid;
+    position: absolute;
+    width: 35rem;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.login-form.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.login-form h3 {
+    font-size: 2.5rem;
+    text-transform: none;
+    color: var(--text-color);
+}
+
+.login-form .box {
+
+    border: 0.5px solid;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-transform: none;
+}
+
+.login-form p {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.header .login-form p a {
+    color: var(--green-color);
+    text-decoration: underline;
+}
+
+main {
+    background: #eee;
+    height: 500px;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+
+.footer {
+    background: var(--bg-color);
+
+}
+
+.footer-content {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.footer-box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--green-color);
+    padding: 1rem 0;
+}
+
+.footer-content .footer-box:first-child h3 {
+    color: var(--orange-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.footer-box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+.footer-box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer-box a i {
+    color: var(--orange-color);
+    padding-right: .5rem;
+}
+.footer-box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.social {
+    display: flex;
+   
+}
+.social a {
+    border: 0px solid;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background: #eee;
+    color: var(--text-color);
+    margin-left: .3rem;
+    cursor: pointer;
+    
+}
+
+.social a:hover {
+    color: var(--bg-color);
+    background-color: var(--green-color);
+}
+
+.email {
+    margin: .7rem 0;
+    width: 75%;
+    padding: 1rem;
+    
+    border: 0.1rem solid #666;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    text-transform: none;
+}
+
+
+.payment-img {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+
+.footer-box .sellos {
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    align-items: center;
+    
+}  
+
+.footer .copyright {
+   text-align: center;
+   margin-top: 2rem;
+   padding: 1rem;
+   padding-top: 2.5rem;
+   color: var(--text-color);
+   font-size: 1.5rem;
+}
+
+.footer .copyright span {
+    color: var(--green-color);
+    font-weight: 500;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+    .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: var(--bg-color);
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .img-logo {
+        width: 30px;
+    }
+
+    .title-logo {
+        font-size: 2rem;
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .footer-box {
+        text-align: center;
+    }
+    .footer-box a {
+        text-align: left;
+    }
+
+    .footer-box .sellos {
+       
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+    .social  {
+        
+        justify-content: center;
+        
+    } 
+
+}
