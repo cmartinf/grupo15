@@ -1,124 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <title>Natural life</title>
-      <!--Google Fonts-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--Font-awesome-->
-      <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
-      
-      <!--Styles-->
-      <link rel="stylesheet" href="/css/styles.css">
+    <title>Natural Market</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap"
+        rel="stylesheet">
 
-  </head>
 
-  <body>
+    <!--Font-awesome-->
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Styles-->
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <!---------- HEADER ---------->
     <header class="header">
 
-        <div class="logo_container">
-            <img src="/img/17_122771.png" alt="Logo" class="img-logo">
-            <a href="/index.html" class="title-logo">Natural Market</a>
-        </div>
-            
-        
-         <!--NavBar-->
+        <a href="/index.html" class="logo">Natural <span>Market</span></a>
+
+
+        <!--NavBar-->
 
         <nav class="navbar">
 
             <a href="/index.html">Home</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#categories">Categorias</a>
             <a href="/pages/products.html">Productos</a>
             <a href="/pages/recipes.html">Recetas</a>
             <a href="/pages/contact.html">Contacto</a>
-            
+
         </nav>
+        <!--Menu-->
         <div class="icons">
             <div id="search-btn"><i class="fas fa-search"></i></div>
             <div id="cart-btn"><i class="fas fa-cart-arrow-down"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
-            
-        </div>
 
+        </div>
+        <!--Search-->
         <form class="search-form">
             <input type="search" id="search-box" placeholder="Search here....">
             <label for="search-box" class="fas fa-search"></label>
         </form>
-
+        <!--Login-->
         <form action="#" class="login-form">
             <h3>Login</h3>
             <input type="email" placeholder="Email registrado" class="box">
             <input type="password" placeholder="Contraseña" class="box">
             <p>¿No estas registrado/a?<a href="/pages/contact.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
-    
+
         </form>
     </header>
+
+    <!---------- MAIN ---------->
     <main>
 
+        <!---------- start HOME ---------->
+        <section class="home">
+            <div class="content">
+                <h3>Productos Frescos y Organicos</h3>
+                <p>Los apasionados por la salud integral y la alimentación natural no pueden perderse nuestros productos
+                </p>
+
+                <a href="/pages/products.html" class="btn-home">Shop Now</a>
+            </div>
+
+        </section>
+        <!---------- end HOME ---------->
+
+
+        <!---------- start SERVICIOS ---------->
+
+        <section class="servicios" id="servicios">
+
+            <h1 class="heading">Nuestros <span>Servicios</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="/assets/img/food_delivery_service_restaurant_order_icon_187259.png" alt="">
+                    <h3>Delivery </h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/payment_icon_194171.png" alt="">
+                    <h3>Pago Seguro</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/customer_support_help_service_icon_192442.png" alt="">
+                    <h3>Soporte 24/7</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!----------end SERVICIOS ---------->
+
+
+        <!---------- start CATEGORIES ---------->
+        <section class="categories" id="categories">
+            <h1 class="heading">Productos <span>Categorias</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="/assets/img/products/especias-elle-1-1666075143-removebg-preview.png" alt="">
+                    <h3>Especias </h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/products/surtido-alergenos-alimentarios-comunes-personas.png" alt="">
+                    <h3>Pastas s/tacc</h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/products/bebidas-vegetales-removebg-preview.png" alt="">
+                    <h3>Leches vegetales</h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/products/bebidas-vegetales-removebg-preview.png" alt="">
+                    <h3>Leches vegetales</h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/products/bebidas-vegetales-removebg-preview.png" alt="">
+                    <h3>Leches vegetales</h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/products/bebidas-vegetales-removebg-preview.png" alt="">
+                    <h3>Leches vegetales</h3>
+
+
+
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <!---------- end CATEGORIAS ---------->
+
+        <!---------- start TESTIMONIOS ---------->
+
+        <section class="review">
+            <h1 class="heading"> Nuestros <span>Clientes</span> </h1>
+
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+
+                        <img src="/assets/img/testimonial/testimonial-4.png" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="/assets/img/testimonial/testimonial-3.png" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="/assets/img/testimonial/testimonial-1.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <!---------- end TESTIMONIOS ---------->
     </main>
-     <footer class="footer">
+    <!---------- end MAIN ---------->
+
+    <!---------- start FOOTER ---------->
+    <footer class="footer">
         <div class="footer-content">
 
-         <div class="footer-box">
-            <h3>Natural Market</h3>
-           
-            <p>Siguenos en nuestras redes!!</p>
-            <div class="social">
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fa-brands fa-square-instagram"></a>
-                <a href="#" class="fab fa-twitter"></a>
+            <div class="footer-box">
+                <h3 class="title-logo">Natural <span>Market</span></h3>
+
+                <p>Siguenos en nuestras redes!!</p>
+                <div class="social">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-square-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
             </div>
-         </div>
-         <div class="footer-box">
-            <h3>Información de Contacto</h3>
-            <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
-            <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
-            <a href="/pages/contact.html"><i class="fa-solid fa-envelope"></i>naturalmarket@gmail.com</a>
-            <a href="#"><i class="fa-solid fa-location-dot"></i>Hipolito Yrigoyen 25 Quilmes</a>
-         </div>
-      
-         <div class="footer-box">
-            <h3>Novedades</h3>
-            <p>Subcribite para tener todas las novedades</p>
-            <input type="email" placeholder="Email" class="email">
-            <input type="submit" value="Suscribete" class="btn">
-           
-         </div>
-    
-        <div class="footer-box">
-            <h3>Información adicional</h3>
-          
-            <a href="#">Gastos de envío</a>
-            <a href="#">Política de devoluciones</a>
-            <a href="#">Cómo hacer un pedido</a>
-            <a href="#">Seguimiento de envío</a>
-            <p class="payment-title">Medios de pago:</p>
-            <img src="/img/payment-img.png" alt="medios de pago" class="payment-img">
-            
+
+
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
+                <a href="/pages/contact.html"><i class="fa-solid fa-envelope"></i>naturalmarket@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Av.Dr.Tristán Achával Rodríguez,Buenos Aires</a>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="/index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
+                <a href="/pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
+                <a href="/pages/recipes.html"><i class="fa-solid fa-arrow-right"></i>Recetas</a>
+                <a href="/pages/contact.html"><i class="fa-solid fa-arrow-right"></i>Contacto</a>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Novedades</h3>
+                <p>Subcribite para tener todas las novedades</p>
+                <input type="email" placeholder="Email" class="email">
+                <input type="submit" value="Suscribete" class="btn">
+
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Información adicional</h3>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Gastos de envío</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Política de devoluciones</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Cómo hacer un pedido</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Seguimiento de envío</a>
+                <p class="payment-title">Medios de pago:</p>
+                <img src="/assets/img/payment-img.png" alt="medios de pago" class="payment-img">
+
+            </div>
+
+            <div class="footer-box">
+                <h3>Nuestra Ubicacion</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.252430811051!2d-58.362579637304684!3d-34.6215270461158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9ab991fe5%3A0xb926aabe1290c523!2sPaseo%20De%20La%20Gloria!5e0!3m2!1ses-419!2sar!4v1715603561902!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
-        </div>
+
+        <!-- Copyright -->
 
         <div class="copyright">
             &copy; 2024 <span>Group 15</span> - Todos los Derechos Reservados.
         </div>
     </footer>
-       
-    
-  
-   
+    <!---------- end FOOTER ---------->
 
-   
+
+
+    <!---------- SCRIPTS ---------->
+
+    <!-- Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link JS -->
-    <script src="/js/scripts.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/swiper.js"></script>
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
-  </body>
+</body>
 
 </html>
