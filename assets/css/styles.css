@@ -381,7 +381,7 @@ section {
 \*-----------------------------------*/
 
 .categories {
-    background: url(/assets/img/hero-left-bg.png);
+    background: url(../img/hero-left-bg.png);
 }
 .categories .box-container {
     border: 0px solid;
