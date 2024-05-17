@@ -287,7 +287,7 @@ section {
     width: 100%;
     min-height: 650px;
     align-items: center;
-    background: url(/assets/img/SinTitulo.png) no-repeat;
+    background: url(../img/SinTitulo.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -332,7 +332,7 @@ section {
   #SECTION SERVICIOS
 \*-----------------------------------*/
 .servicios {
-    background: url(/img/hero-left-bg.png);
+    background: url(../img/hero-left-bg.png);
 }
 .servicios .box-container {
     border: 0px solid;
